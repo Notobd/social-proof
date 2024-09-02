@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+main {
+  padding: 50px;
+  /* border: 2px solid brown; */
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+#ratingContainer {
+  /* border: 3px solid blue; */
+  display: flex;
+  gap: 50px;
+  padding: 20px;
+  align-items: center;
+  background-image: url(./images/bg-pattern-top-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.brief-intro {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+.rating-review {
+  display: flex;
+  background-color: hsl(303, 10%, 95%);
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 10px;
+}
+.rating-guru {
+  display: flex;
+  background-color: hsl(303, 10%, 95%);
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 10px;
+  position: relative;
+  left: 30px;
+}
+.rating-best {
+  display: flex;
+  background-color: hsl(303, 10%, 95%);
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 10px;
+  position: relative;
+  left: 60px;
+}
+.image-container {
+  display: flex;
+  gap: 8px;
+}
+.star-icon {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#userFeedback {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  /* position: relative; */
+  background-image: url(./images/bg-pattern-bottom-desktop.svg);
+}
+.irene-container {
+  position: relative;
+  top: 20px;
+}
+.anne-container {
+  position: relative;
+  top: 40px;
+}
+.colton-container,
+.irene-container,
+.anne-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: hsl(300, 43%, 22%);
+}
+.profile-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.profile-pic {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media (min-width: 1024px) {
+  #ratingContainer {
+    width: 100%;
+    gap: 0;
+  }
+  section {
+    gap: 20px;
+  }
+  #ratingContainer {
+    gap: 50px;
+  }
+  h1 {
+    font-size: 40px;
+    font-size: 500;
+    width: 14ch;
+    color: hsl(300, 43%, 22%);
+  }
+  h1 + p {
+    font-size: 20px;
+    font-weight: 500;
+    width: 40ch;
+    line-height: 1.5;
+    color: hsl(303, 10%, 65%);
+  }
+  .star-icon {
+    height: auto;
+    width: 15px;
+  }
+  .rating-text {
+    font-size: 15px;
+    font-weight: 700;
+    color: hsl(300, 43%, 38%);
+    margin-right: 25px;
+  }
+  .profile-pic {
+    width: 40px;
+    height: 40px;
+  }
+  .name-user {
+    font-size: 15px;
+    font-weight: 600;
+    color: hsl(300, 24%, 90%);
+  }
+  .buyer-status {
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(333, 80%, 60%);
+  }
+  .colton-container > p {
+    width: 30ch;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: hsl(300, 24%, 90%);
+  }
+  .irene-container > p {
+    width: 28ch;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: hsl(300, 24%, 90%);
+  }
+  .anne-container > p {
+    width: 30ch;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: hsl(300, 24%, 90%);
+  }
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  section {
+    gap: 20px;
+  }
+  #ratingContainer {
+    width: 100%;
+    gap: 30px;
+  }
+  h1 {
+    font-size: 30px;
+    font-size: 500;
+    width: 14ch;
+    color: hsl(300, 43%, 22%);
+  }
+  h1 + p {
+    font-size: 15px;
+    font-weight: 300;
+    width: 40ch;
+    line-height: 1.5;
+    color: hsl(303, 10%, 65%);
+  }
+  .star-icon {
+    height: auto;
+    width: 10px;
+  }
+  .rating-text {
+    font-size: 10px;
+    font-weight: 700;
+    color: hsl(300, 43%, 38%);
+    margin-right: 25px;
+  }
+  .rating-guru {
+    left: 15px;
+  }
+  .rating-best {
+    left: 30px;
+  }
+  .profile-pic {
+    width: 25px;
+    height: 25px;
+  }
+  .name-user {
+    font-size: 10px;
+    font-weight: 600;
+    color: hsl(300, 24%, 90%);
+  }
+  .buyer-status {
+    font-size: 10px;
+    font-weight: 400;
+    color: hsl(333, 80%, 60%);
+  }
+  .colton-container > p {
+    width: 30ch;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: hsl(300, 24%, 90%);
+  }
+  .irene-container > p {
+    width: 28ch;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: hsl(300, 24%, 90%);
+  }
+  .anne-container > p {
+    width: 30ch;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: hsl(300, 24%, 90%);
+  }
+  .irene-container {
+    top: 10px;
+  }
+  .anne-container {
+    top: 20px;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    flex-direction: column;
+  }
+  main {
+    padding: 20px;
+  }
+  section {
+    flex-direction: column;
+    gap: 10px;
+    background-image: url(./images/bg-pattern-top-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  #ratingContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  h1 {
+    font-size: 35px;
+    font-size: 500;
+    width: 14ch;
+    text-align: center;
+    color: hsl(300, 43%, 22%);
+  }
+  h1 + p {
+    font-size: 15px;
+    font-weight: 500;
+    width: 32ch;
+    line-height: 1.5;
+    text-align: center;
+    color: hsl(303, 10%, 65%);
+  }
+  .star-icon {
+    height: auto;
+    width: 10px;
+  }
+  .rating-review,
+  .rating-guru,
+  .rating-best {
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+    left: 0;
+    padding: 10px 30px;
+  }
+  .rating-text {
+    font-size: 15px;
+    font-weight: 700;
+    color: hsl(300, 43%, 38%);
+  }
+  #userFeedback {
+    flex-direction: column;
+  }
+  .profile-pic {
+    width: 25px;
+    height: 25px;
+  }
+  .name-user {
+    font-size: 15px;
+    font-weight: 600;
+    color: hsl(300, 24%, 90%);
+  }
+  .buyer-status {
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(333, 80%, 60%);
+  }
+  .colton-container > p {
+    width: 26ch;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: hsl(300, 24%, 90%);
+  }
+  .irene-container > p {
+    width: 27ch;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: hsl(300, 24%, 90%);
+  }
+  .anne-container > p {
+    width: 28ch;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: hsl(300, 24%, 90%);
+  }
+  .irene-container {
+    top: 0;
+  }
+  .anne-container {
+    top: 0;
+  }
+}
